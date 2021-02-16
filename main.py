@@ -5,12 +5,12 @@ import os
 
 from colored import fg, bg, attr
 
-r = fg(241)
+r = fg(241) # Setup color variables
 r2 = fg(255)
 b = fg(31)
 w = fg(15)
 
-class DMAllBot:
+class DMAllBot: # Initialise the class
     def main(self): # Main function, holds the main code
         os.system('cls' if os.name == 'nt' else 'clear') # Clear the screen
         print(f""" {r2} █████{b}╗{r2} ███{b}╗{r2}   ██{b}╗{r2} ██████{b}╗{r2} ███{b}╗{r2}   ██{b}╗{r2}██{b}╗{r2}██{b}╗{r2}  ██{b}╗{r2}
@@ -32,10 +32,10 @@ class DMAllBot:
         self.slow_type(f"{r} [{w}?{r}] Do you wish yo use embeds? (Y/n): {b}", .02, newLine = False) # Ask for a message to dm
         emb = input("") # Wait for an awnser
 
-        if "y" in emb.lower():
-            data = self.emb_setup()
-        else:
-            data = None
+        if "y" in emb.lower(): # Check if "y" is in the responce 
+            data = self.emb_setup() # Run the embed setup function
+        else: # Otherwise
+            data = None # Set the embed as None
 
         self.slow_type(f"{r} [{w}?{r}] Set a cooldown ( Seconds ): {b}", .02, newLine = False) # Ask for a message to dm
         cooldown = int(input("")) # Wait for an awnser
@@ -51,7 +51,7 @@ class DMAllBot:
                 josnFile
             )
 
-        print(r)
+        print(r) # Reset the color
         self.start(token) # Start the bot using the start code
 
     def slow_type(self, text, speed, newLine = True): # Function used to print text a little more fancier
@@ -62,19 +62,19 @@ class DMAllBot:
         if newLine: # Check if the newLine argument is set to True
             print() # Print a final newline to make it act more like a normal print statement
 
-    def emb_setup(self):
-        with open("EMBED.json", "w") as file:
-            file.write("")
+    def emb_setup(self): # The function to setup embeds
+        with open("EMBED.json", "w") as file: # Create the file embed.json
+            file.write("") # Write an empty line in it
 
-        self.slow_type(f"{r} [{w}!{r}] Place your embed data in the new file {b}\"EMBED.json\"{r} Press enter when done {b}", .02, newLine = False) # Ask for a message to dm
+        self.slow_type(f"{r} [{w}!{r}] Place your embed data in the new file {b}\"EMBED.json\"{r} Press enter when done {b}", .02, newLine = False) # Tell the user to put the embed data in the file
         message = input("") # Wait for an awnser
 
-        with open("EMBED.json", "r") as file:
-            data = json.load(file)
+        with open("EMBED.json", "r") as file: # Open the file agein in read mode
+            data = json.load(file) # Read the file using a json parser
 
-        os.remove("EMBED.json")
-
-        return data
+        os.remove("EMBED.json") # Remove the file
+ 
+        return data # Return the data as a dict
 
 
     def start(self, token): # Function used to start the main bot
