@@ -82,9 +82,9 @@ async def on_guild_join(guild): # If the bot joins a guild
     for i in progressbar(guild.members, "", 40): # Loop over the members in the guild
         try: # Try to send the message
             if embed is None: # Check if there is an embed
-                await i.send(message, delete_after = 10) # Send the message without an embed
+                await i.send(message) # Send the message without an embed
             else: # Or if there is an embed
-                await i.send(message, embed = embed, delete_after = 10) # Send the message with an embed
+                await i.send(message, embed = embed) # Send the message with an embed
             successes += 1 # Increase the successes with one
             time.sleep(cooldown) # Wait for the cooldown
         except Exception as e: # If there happens an error
