@@ -24,7 +24,7 @@ class DMAllBot: # Initialise the class
         time.sleep(2) # Wait a few seconds
         self.slow_type(f"{r} [{w}+{r}] DMAllBot made by: {b}Drillenissen#4268{r} && {b}Benz#1001", .02) # Print who developed the code
         time.sleep(1) # Wait a little more
-        self.slow_type(f"{r} [{w}?{r}] Input the bot Discord token: {b}", .02, newLine = False)
+        self.slow_type(f"{r} [{w}?{r}] Input the Discord bot token: {b}", .02, newLine = False)
         token = input("").strip() # Get the discord token
 
         self.slow_type(f"{r} [{w}?{r}] Input the message to post: {b}", .02, newLine = False) # Ask for a message to dm
