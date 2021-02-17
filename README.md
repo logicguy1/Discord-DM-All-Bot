@@ -7,7 +7,7 @@
 
 # Discord-DM-All-Bot
 <p align="center">
-<img src="example.png" />
+<img src="example1.png" />
 </p>
 
 ## Installation
