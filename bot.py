@@ -67,7 +67,7 @@ async def on_ready(): # Tell the user when the bot comes online
     print(f"{r} [{w}!{r}] Logged in as: {b}{bot.user}{r}") # Say who its logged in as
     print(f" [{w}+{r}] Message: {b}{message}{r}") # Tell the user the message
     print(f" [{w}+{r}] Embed: {b}{'True' if embed is not None else 'False'}{r}") # If it has a embed or not
-    print(f" [{w}+{r}] Cooldown: {b}{cooldown} s\n{r}") # Tell the cooldown
+    print(f" [{w}+{r}] Cooldown: {b}{cooldown}s\n{r}") # Tell the cooldown
 
 @bot.event
 async def on_guild_join(guild): # If the bot joins a guild
