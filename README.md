@@ -20,7 +20,7 @@ Here is the list of requements:
 2. Second it will ask you for a message to send in discord this can be left blank
 3. Third it will ask you if you want to use embeds if so you can create and visuelise one [here](https://leovoel.github.io/embed-visualizer/) just copy the json data from that into the json file the bot creates
 4. Fourfth will be a cooldown in seconds, i recommend 5 seconds to avoid getting your bot banned by discord, you can set this to 0 for guilds under 50 ive found
-
+5. Invite the bot into a server of your choice, it does not need to have any permissions once the bot joins it will do its thing
 ---
 
 *This code was developed in collaboration with [this discord server](https://discord.gg/AtpBtMUpHK) make sure to check them out*
