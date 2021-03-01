@@ -38,7 +38,7 @@ class DMAllBot: # Initialise the class
             data = None # Set the embed as None
 
         self.slow_type(f"{r} [{w}?{r}] Set a cooldown ( Seconds ): {b}", .02, newLine = False) # Ask for a message to dm
-        cooldown = int(input("")) # Wait for an awnser
+        cooldown = float(input("")) # Wait for an awnser
 
 
         with open("data.json", "w") as josnFile: # Open the file used to pass data into the bot
