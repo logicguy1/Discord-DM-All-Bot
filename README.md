@@ -14,6 +14,9 @@
 Here is the list of requements:
 * colored
 * discord.py
+#Attention
+**This works properly for verified discord bots, if you haven't got verified discord bot
+you may use cooldown.**
 
 ## How to use
 1. Run the file `main.py` it will first ask you for a discord bot token here it is very important in the discord dev portal to check on member indents or the bot will not work properbly <img src="example2.png" />
