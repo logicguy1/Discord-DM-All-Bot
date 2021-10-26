@@ -23,4 +23,4 @@ Here is the list of requements:
 5. Invite the bot into a server of your choice, it does not need to have any permissions once the bot joins it will do its thing
 ---
 
-*This code was developed in collaboration with [this discord server](https://discord.gg/AtpBtMUpHK) make sure to check them out*
+*This code was developed in collaboration with [this discord server](https://www.anonix.xyz/discord) make sure to check them out*
